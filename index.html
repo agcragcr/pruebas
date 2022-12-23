@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+ height: 100%;
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Para el amor de mi vida</title>
+    <style>
+     body {
+    min-height: 150px;
+    max-width: 150px;
+    background-color: papayawhip; 
+    margin: 0 auto;
+    }
+.love { width: 50px; height: 50px;
+ transform: rotate(45deg);
+ background: red; 
+}
+.love:before,
+.love:after {
+  content: "";
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: red;
+}
+.love {
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+  background: red;
+  position: relative;
+  top: 10rem;
+  left: 10rem;
+}
+
+.love:before,
+.love:after {
+  content: "";
+  height: 50px;
+  width: 50px;
+0  border-radius: 50%;
+  background: red;
+  position: absolute;
+}
+
+.love:before {
+  top: 0;
+  left: -25px;
+}
+
+.love:after {
+  top: -25px;
+}
+.love {
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+  background: red;
+  position: relative;
+  top: 10rem;
+  left: 10rem;
+  animation: beating 2s ease infinite;
+}
+@keyframes beating {
+  0% {
+  	transform: rotate(45deg) scale(1);
+  }
+  50% {
+    transform: rotate(45deg) scale(3);
+  }
+  100% {
+  	transform: rotate(45deg) scale(1);
+  }
+}
+@keyframes beating1 {
+  0% {
+        transform: scale(1);
+  }
+  50% {
+    transform:  scale(1.5);
+  }
+  100% {
+        transform: scale(1);
+  }
+}
+.boton {
+content: "haz click aquí";
+text-decoration:none;
+font-weight: 600;
+font-size: 20px;
+color:#333333;
+padding-top:15px;
+padding-bottom:15px;
+padding-left:40px;
+padding-right:40px;
+background-color:#e32b2b;
+border-color: #d8d8d8;
+border-width: 3px;
+border-style: solid;
+border-radius:35px;
+background: red;
+  animation: beating1 2s ease infinite;
+
+} 
+
+    </style>
+  </head>
+  <body background="gif.gif">
+<audio autoplay loop>
+    <source src="megustastu.mp3">
+    El navegador no puede reproducir el audio.
+</audio>
+   
+  <div class="love"></div>
+  </body>
+  <footer>
+   <div style="text-align: center;">
+    <a class="boton" href="justAquestion.html" style="position: absolute;top: 50%;">Haz click aquí</a>
+   </div>
+  </footer>
+</html>
